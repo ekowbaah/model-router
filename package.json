@@ -1,1 +1,16 @@
-{"name":"model-router","version":"0.1.0","private":true,"type":"module","scripts":{"build":"tsc","test":"npm run build && node --test dist/**/*.test.js"},"devDependencies":{"typescript":"^5.9.3","@types/node":"^22.15.0"}}
+{
+  "name": "model-router",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "start": "node dist/main.js",
+    "test": "npm run build && node --test dist/**/*.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.9.3"
+  }
+}
